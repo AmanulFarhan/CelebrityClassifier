@@ -17,6 +17,8 @@ def classify_image():
     response.headers.add('Access-Control-Allow-Origin', "*")
     return response
 
+util.load_saved_artifacts()
+
 if (__name__ == "__main__"):
     print("Starting Python server for celebrity classifier")
     util.load_saved_artifacts()
